@@ -1,0 +1,27 @@
+ncsim(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm t_pipeline.B t_pipeline.A t_pipeline.C t_pipeline.D t_pipeline.F t_pipeline.clk
+Created probe 1
+ncsim> run 10
+                   0F=   x
+Ran until 10 NS + 0
+ncsim> run 10
+Ran until 20 NS + 0
+ncsim> run -adjacent
+ncsim: *N,ADJNEP: Not in Verilog process; continuing as 'run -next'.
+Stepped to 20 NS + 0
+ncsim> run 10
+Ran until 30 NS + 0
+ncsim> run 5
+                  31F= 800
+Ran until 35 NS + 0
+ncsim> ...Regained control from SimVision
+-------------------------------------
+
+ncsim> ncsim: Memory Usage - 38.6M program + 182.7M data = 221.3M total (225.1M Peak)
+ncsim: CPU Usage - 14.4s system + 34.2s user = 48.7s total (1449.3s, 3.4% cpu)
