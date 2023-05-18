@@ -1,0 +1,4 @@
+ncelab(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+ncelab: *F,MISLUN: missing top level module, design unit name..
+ncelab: Memory Usage - 49.9M program + 23.0M data = 72.9M total
+ncelab: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 56.0% cpu)

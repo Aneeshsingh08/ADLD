@@ -1,0 +1,4 @@
+ncvlog(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+ncvlog: *F,MOUNIT: more than one unit matches worklib.t_parking - worklib.t_parking:module & worklib.t_parking:v.
+ncvlog: Memory Usage - 21.3M program + 22.1M data = 43.4M total
+ncvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 44.5% cpu)

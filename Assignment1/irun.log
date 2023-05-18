@@ -1,0 +1,49 @@
+irun(64): 15.20-s051: (c) Copyright 1995-2018 Cadence Design Systems, Inc.
+TOOL:	irun(64)	15.20-s051: Started on Apr 13, 2023 at 10:32:47 IST
+irun
+	-access +rwc
+	t_parking.v
+Recompiling... reason: file './t_parking.v' is newer than expected.
+	expected: Wed Apr 12 16:47:54 2023
+	actual:   Thu Apr 13 10:25:50 2023
+file: t_parking.v
+	module worklib.t_parking:v
+		errors: 0, warnings: 0
+	module worklib.parking:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		t_parking
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.parking:v <0x562daabf>
+			streams:   3, words:  1568
+		worklib.t_parking:v <0x4e6f0810>
+			streams:   8, words:  7226
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		              Instances  Unique
+		Modules:              2       2
+		Registers:           12      12
+		Scalar wires:         4       -
+		Vectored wires:       2       -
+		Always blocks:        3       3
+		Initial blocks:       2       2
+		Pseudo assignments:   4       4
+	Writing initial simulation snapshot: worklib.t_parking:v
+Loading snapshot worklib.t_parking:v .................... Done
+ncsim> source /cad_area/install/INCISIVE152/tools/inca/files/ncsimrc
+ncsim> run
+                   0ftsens= 0,bksens= 0
+                  10ftsens= 1,bksens= 0
+                  20ftsens= 1,bksens= 1
+                  30ftsens= 0,bksens= 0
+                  50ftsens= 1,bksens= 0
+                  80ftsens= 1,bksens= 1
+                  90ftsens= 0,bksens= 0
+Simulation complete via $finish(1) at time 200 NS + 0
+./t_parking.v:39 	#200  $finish;
+ncsim> exit
+TOOL:	irun(64)	15.20-s051: Exiting on Apr 13, 2023 at 10:32:57 IST  (total: 00:00:10)
